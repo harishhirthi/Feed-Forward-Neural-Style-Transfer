@@ -49,9 +49,9 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--content_img_dir", type = str, help = "Directory of content image.", default = "content") # Jumping-spider-C2-Macrotiff-PIxabay-PD.jpg
-    parser.add_argument("--content_img_name", type = str, help = "Content image name.", default = "hilton-lagoon-hawaii.jpg") # O 1097 La.jpg, 00000014_(5).jpg, 00000005_(5).jpg
-    parser.add_argument("--target_shape", type = int, help = "New width to be resized for content image", default = 700) # Jumping-spider-C2-Macrotiff-PIxabay-PD.jpg
+    parser.add_argument("--content_img_dir", type = str, help = "Directory of content image.", default = "content")
+    parser.add_argument("--content_img_name", type = str, help = "Content image name.", default = "hilton-lagoon-hawaii.jpg")
+    parser.add_argument("--target_shape", type = int, help = "New width to be resized for content image", default = 700)
     parser.add_argument("--model_name", type = str, help = "Model binary to be used for stylization", default = "style_styledc_cw_450000.0_sw_100000000000.0_tw_0.0_final.pth")
     parser.add_argument("--show_image", type = bool, help = "Show the output image.", default = False)
     args = parser.parse_args()
