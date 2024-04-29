@@ -20,6 +20,11 @@ The system uses neural representations to separate and recombine content and sty
 ## Results:
 The below results are to showcase the working of Neural Style Transfer. 
 
+**Style image:**
+
+![styledc](https://github.com/harishhirthi/Feed-Forward-Neural-Style-Transfer/assets/43694283/e38d226e-8dd0-4937-a9be-8d05060fa15e)
+
+
 | Content images | Stylized images |
 :-------------------------:|:-------------------------:
 ![3-vestrahorn-iceland](https://github.com/harishhirthi/Feed-Forward-Neural-Style-Transfer/assets/43694283/55a48157-aa93-419c-ade6-29b3b736e8b3) | ![Stylized-image-3-vestrahorn-iceland](https://github.com/harishhirthi/Feed-Forward-Neural-Style-Transfer/assets/43694283/dd34642b-8edf-458d-8630-b43e04ca0cd9)
