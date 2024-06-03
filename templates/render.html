@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en">
+ <head>
+    <meta charset = "utf-8">
+    <title>Neural Style Transfer</title>
+    <h1 class="intro" style="text-align:center">Neural Style Transfer</h1>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+ </head> 
+ <style>
+    body {
+      background: url(/static/the-calm-wallpaper.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+      }
+    .info {
+      background-color: #7d8083;
+      border-left: 6px solid #090909;
+      border-right: 6px solid #090909;
+      }
+ </style>
+
+ <body>	 
+    <div class="info" align = "center">
+        <p><strong>Info!!</strong> Torch file is found in models/binaries</p>
+    </div>
+
+	<div class = "form" align = "center">
+	  <form action = "{{ url_for('upload_file') }}" method = "POST" enctype = "multipart/form-data"> 
+        <textarea name = "Modelname" placeholder = "Enter the model name in .pth"></textarea><br><br>
+	  	<input type = "file" name = "image" />
+		<input type = "submit" value = "Stylize" />
+	  </form>
+    
+
+    {% if image %}
+    <h2> Stylized Image!!! </h2>
+    <img src = "{{image}}", alt = "Stylized image">
+    {% else %}
+    <h2> Image will be Stylized here...... </h2>
+    {% endif %}
+    </div>
+ </body>
+</html>
+
